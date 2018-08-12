@@ -1,9 +1,15 @@
 package com.ebisearch.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-@Document(indexName = "mkyong", type = "books")
+import javax.validation.constraints.NotNull;
+
+@Document(indexName = "ebidomains", type = "domain")
+/*@Data
+@AllArgsConstructor*/
 public class Domain {
 
     @Id
